@@ -16,8 +16,11 @@ num = int(input())
 for i in range(num):
     scores = list(map(int, input().split()))
     avg = sum(scores[1:])/scores[0]
+    print(f'평균은 -> {avg}')
     cnt = 0
+    print(f'프린트 i -> {i}')
     for j in scores[1:]:
+        print(f'프린트 j -> {j}')
         if j > avg:
             cnt += 1
             
