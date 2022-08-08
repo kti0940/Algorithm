@@ -1,12 +1,15 @@
-word = input().lower()
-word_list = list(set(word))
-cnt = [] # 많이 사용된 알파뱃이 들어갈 자리
+num_list = [3, 55, 9, 5, 7, 11]
 
-for i in word_list:
-    count = word.count(i)
-    cnt.append(count)
+def is_maxcount(num):
+    max_num = 0
+    for i in num:
+        if i > max_num:
+            max_num = i
+    return max_num
 
-if cnt.count(max(cnt)) >= 2:
-    print("?")
-else:
-    print(word_list[(cnt.index(max(cnt)))].upper())
+result = is_maxcount(num_list)
+print(result)
+
+result += 1
+
+print(result)
