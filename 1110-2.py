@@ -1,7 +1,3 @@
-from tkinter import N
-from turtle import Turtle
-
-
 n = int(input())
 num = n
 count = 0
