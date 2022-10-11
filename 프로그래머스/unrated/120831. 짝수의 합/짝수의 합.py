@@ -1,3 +1,2 @@
 def solution(n):
-    n = n//2
-    return((n*(n+1)))
+    return sum(i for i in range(2, n+1, 2))
